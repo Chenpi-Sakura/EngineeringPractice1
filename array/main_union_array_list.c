@@ -24,12 +24,12 @@ int main() {
     printf("请输入 A 集合内的元素: ");
     while (n--) 
     {
-        int e; scanf("%d", &e);
+        ElemType e; scanf("%d", &e);
         ListInsert(&La, La.length + 1, e);
     }
     printf("请输入 B 集合内的元素: ");    while (m--) 
     {
-        int e; scanf("%d", &e);
+        ElemType e; scanf("%d", &e);
         ListInsert(&Lb, Lb.length + 1, e);
     }
     SqList *current;
@@ -47,7 +47,7 @@ int main() {
     printf("合并后的集合为： ");
     for (int i = 1; i <= current->length; i++) 
     {
-        int e;
+        ElemType e;
         GetElem(*current, i, &e);
         printf("%d ", e);
     }

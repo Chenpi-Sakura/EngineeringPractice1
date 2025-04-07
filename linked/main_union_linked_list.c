@@ -26,14 +26,14 @@ int main()
     printf("请输入 A 集合内的元素: ");
     while (n--)
     {
-        int e; scanf("%d", &e);
+        ElemType e; scanf("%d", &e);
         AppendList(&Atail, e);
         // 此处调用的 AppendList 原文档中未作要求，其实现原理与 ListInsert 一致， 此处是为了方便测试
     }
     printf("请输入 B 集合内的元素: ");
     while (m--)
     {
-        int e; scanf("%d", &e);
+        ElemType e; scanf("%d", &e);
         AppendList(&Btail, e);
     }
     LinkList current;
